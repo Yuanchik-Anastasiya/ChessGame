@@ -1,3 +1,8 @@
+package game.pieces;
+
+import game.board.Position;
+import game.utils.PieceColor;
+
 public class Pawn extends Piece {
     public Pawn(PieceColor color, Position position) {
         super(color, position);

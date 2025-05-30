@@ -1,3 +1,8 @@
+package game.pieces;
+
+import game.board.Position;
+import game.utils.PieceColor;
+
 public class Bishop extends Piece {
     public Bishop(PieceColor color, Position position) {
         super(color, position);

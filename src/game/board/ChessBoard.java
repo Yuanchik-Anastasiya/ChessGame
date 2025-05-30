@@ -1,3 +1,8 @@
+package game.board;
+
+import game.pieces.*;
+import game.utils.PieceColor;
+
 public class ChessBoard {
     private Piece[][] board;
 

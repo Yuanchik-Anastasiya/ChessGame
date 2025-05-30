@@ -1,3 +1,8 @@
+package game.pieces;
+
+import game.board.Position;
+import game.utils.PieceColor;
+
 public abstract class Piece {
     protected Position position;
     protected PieceColor color;

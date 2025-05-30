@@ -1,3 +1,5 @@
+package game.board;
+
 import javax.swing.*;
 import java.awt.*;
 

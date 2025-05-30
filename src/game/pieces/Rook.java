@@ -1,3 +1,8 @@
+package game.pieces;
+
+import game.board.Position;
+import game.utils.PieceColor;
+
 public class Rook extends Piece {
     public Rook(PieceColor color, Position position) {
         super(color, position);

@@ -1,3 +1,11 @@
+package ui;
+
+import game.board.ChessBoard;
+import game.board.Position;
+import game.pieces.King;
+import game.pieces.Piece;
+import game.utils.PieceColor;
+
 import java.util.List;
 import java.util.ArrayList;
 public class ChessGame {
@@ -48,7 +56,7 @@ public class ChessGame {
                 }
             }
         }
-        throw new RuntimeException("King not found, which should never happen.");
+        throw new RuntimeException("game.pieces.King not found, which should never happen.");
 
     }
     public boolean isCheckmate(PieceColor kingColor) {
@@ -138,22 +146,22 @@ public class ChessGame {
 
         List<Position> legalMoves = new ArrayList<>();
         switch (selectedPiece.getClass().getSimpleName()) {
-            case "Pawn":
+            case "game.pieces.Pawn":
                 addPawnMoves(position, selectedPiece.getColor(), legalMoves);
                 break;
-            case "Rook":
+            case "game.pieces.Rook":
                 addLineMoves(position, new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}, legalMoves);
                 break;
-            case "Knight":
+            case "game.pieces.Knight":
                 addSingleMoves(position, new int[][]{{2, 1}, {2, -1}, {-2, 1}, {-2, -1}, {1, 2}, {-1, 2}, {1, -2}, {-1, -2}}, legalMoves);
                 break;
-            case "Bishop":
+            case "game.pieces.Bishop":
                 addLineMoves(position, new int[][]{{1, 1}, {-1, -1}, {1, -1}, {-1, 1}}, legalMoves);
                 break;
-            case "Queen":
+            case "game.pieces.Queen":
                 addLineMoves(position, new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {-1, -1}, {1, -1}, {-1, 1}}, legalMoves);
                 break;
-            case "King":
+            case "game.pieces.King":
                 addSingleMoves(position, new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {-1, -1}, {1, -1}, {-1, 1}}, legalMoves);
                 break;
         }

@@ -1,3 +1,5 @@
+package game.board;
+
 public class Position {
     private int row;
     private int column;

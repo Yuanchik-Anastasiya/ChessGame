@@ -1,3 +1,8 @@
+package game.pieces;
+
+import game.board.Position;
+import game.utils.PieceColor;
+
 public class Knight extends Piece {
     public Knight(PieceColor color, Position position) {
         super(color, position);

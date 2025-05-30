@@ -1,3 +1,11 @@
+package ui;
+
+import game.board.ChessBoard;
+import game.board.ChessSquareComponent;
+import game.board.Position;
+import game.pieces.*;
+import game.utils.PieceColor;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
