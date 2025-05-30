@@ -12,7 +12,7 @@ public class ChessSquareComponent extends JButton {
     }
 
     private void initButton() {
-        setPreferredSize(new Dimension(64, 64));
+        setPreferredSize(new Dimension(80, 80));
         if ((row + col) % 2 == 0) {
             setBackground(Color.LIGHT_GRAY);
         } else {
